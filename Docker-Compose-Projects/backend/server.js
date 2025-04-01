@@ -49,14 +49,14 @@ const getLastteacherID = async () => {
 // });
 
 app.get('/', async (req, res) => {
-  try {
-      // Fetch data from the student table
-      const [data] = await db.query("SELECT * FROM student");
-      return res.json({ message: "From Backend!!!", studentData: data });
-  } catch (error) {
-      console.error('Error fetching student data:', error);
-      return res.status(500).json({ error: 'Error fetching student data' });
-  }
+    try {
+        // Fetch data from the student table
+        const [data] = await db.query("SELECT * FROM student");
+        return res.json({ message: "From Backend!!!", studentData: data });
+    } catch (error) {
+        console.error('Error fetching student data:', error);
+        return res.status(500).json({ error: 'Error fetching student data' });
+    }
 });
 
 app.get('/student', async (req, res) => {

@@ -1,8 +1,9 @@
 # Stage 1: Build the application using Node.js
 FROM node:21-alpine3.17 as build
 WORKDIR /app
-COPY . .
+COPY package*.json ./
 RUN npm install
+COPY . .
 RUN npm run build
 
 # Stage 2: Use Nginx to serve the frontend content
