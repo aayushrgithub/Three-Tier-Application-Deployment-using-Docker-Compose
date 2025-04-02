@@ -67,7 +67,7 @@ function Student() {
     <div>
       <div className="student-container">
         <div className="content">
-          <h2 className='store-student-details' style={{ marginLeft: '100px' }}>Best Student Details</h2>
+          <h2 className='store-student-details' style={{ marginLeft: '100px' }}>Bestest Student Details</h2>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label>Name:</label>
